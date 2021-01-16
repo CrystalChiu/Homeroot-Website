@@ -1,0 +1,661 @@
+
+@font-face {
+  font-family: "Glacial Indifference";
+  src: url("./fonts/GlacialIndifference-Regular.otf") format("opentype");
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("./fonts/Poppins-SemiBold.otf") format("opentype");
+}
+@font-face {
+  font-family: "Alata";
+  src: url("./fonts/alata-regular.ttf") format("TrueType");
+}
+@font-face {
+  font-family: "Aleo";
+  src: url("./fonts/aleo-regular.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Gelasio";
+  src: url("./fonts/gelasio-regular.ttf") format("TrueType");
+}
+
+@font-face {
+  font-family: "Reey";
+  src: url("./fonts/Reey-regular.otf") format("opentype");
+}
+
+.navbar-nav {
+	width: 100%;	
+	text-align: left;
+	display: flex !important; 
+	justify-content: flex-end!important;
+	position: relative;
+	font-family: "Glacial Indifference"
+}
+.navbar {
+	width: 100%;
+	position: fixed;
+	box-shadow: 2px 4px 4px rgba(0,0,0,.2);
+	background-color: white;
+	min-width: 350px;
+	z-index: 1000;
+}
+
+.navbar-toggler {
+	border:none !important;
+}
+
+#navcontainer {
+	padding-top: 10px;
+	width: 100%;
+}
+
+a {
+	color: black !important;;
+	overflow: hidden;
+}
+a:hover {
+	color: #2A7966 !important;
+	text-decoration: none;
+}
+
+a.active {
+	font-weight: bold;
+	color: #2A7966 !important;
+}
+
+html,
+body {
+	height: 100%;
+	width: 100%;
+}
+
+
+#title {
+	font-family: Gelasio !important;
+	justify-content: center;
+	display: flex;
+	color: white;
+	font-weight: bold;
+}
+
+#mainMessage {
+	width:1100px;
+	font-style: italic;
+	letter-spacing: 0.8px;
+}
+
+#text1 {
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+	background-color: transparent;
+	color: white;
+	justify-content: center;
+	text-align: center;
+	overflow: hidden;
+	position: absolute;
+	height: 100%;
+	text-shadow: 2 2 6px rgba(0,0,.2,.2);
+	width: 100%;
+}
+
+.jumbotron {
+	background-color: transparent;
+	margin: 0;
+	width: 110%;
+}
+
+.text-responsive {
+  font-size: calc(100% + 1.8vw + 2vh) !important;
+}
+
+.text-responsive2 {
+	font-size: calc(100% + 0.2vw + 0.2vh) !important;
+	display: flex;
+  	justify-content: center;
+}
+
+.fade-in {
+animation: fadeIn ease 2.5s;
+-webkit-animation: fadeIn ease 2.5s;
+-moz-animation: fadeIn ease 2.5s;
+-o-animation: fadeIn ease 2.5s;
+-ms-animation: fadeIn ease 2.5s;
+}
+
+.parallax {
+	display: flex;
+	background-position: center;
+	height: 720px;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	display: flex;
+	background-image: url("./images/homepage2.JPG");
+	width: 100%;
+}
+
+.parallax2 {
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+	background-size: cover;
+	background-color: white;
+	z-index: 3;
+	position: relative;
+	display: flex;
+}
+
+#text1 {
+	width: 100%;
+	line-height: 2.0;
+}
+
+#text2h1 {
+	color: #222222;
+	font-family: Aleo !important;
+	font-size: calc(100% + 0.5vw + 0.5vh) !important;
+	display: flex;
+	justify-content: flex-start;
+	font-weight: bold;
+	letter-spacing: 0.6px;
+}
+
+#text2 {
+	text-align: left;
+	width: 95%;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+}
+
+#text2p {
+	font-style: normal !important;
+	font-family: Gelasio !important;
+	font-size: calc(100% + 0.1vw + 0.1vh) !important;
+}
+
+#container {
+	width: 100%;
+	display: flex;
+	justify-content: flex-start;
+}
+
+#row {
+	width: 100%;
+}
+
+#container2 {
+	height: 600px;
+	background-color: white;
+	margin:0;
+	display: flex;
+	justify-content: center;
+}
+
+.imgsContainer {
+	height: 100%;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+.imgs {
+	display: inline;
+	position: inline;
+}
+
+.imgBlock {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+#imgstext {
+	font-size: calc(100% + 0.01vw + 0.1vh) !important;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	color:#4bb49e;
+	font-family: aleo;
+}
+
+#imgscol {
+	display: flex;
+	justify-content: center;
+}
+
+#img {
+	width: 15%;
+}
+
+#carouselMessage {
+	font-family: Alata !important;
+	font-size: calc(100% + 2vw + 2vh) !important;
+	display: flex;
+	justify-content: center;
+}
+
+.parallax3 {
+	background-color: #eeeeee;
+	display: flex;
+}
+
+#Label {
+	text-align: center;
+	background-color: white;
+	margin-top: 0 !important;
+	padding-top: 25px;
+	padding-bottom: 25px;
+	letter-spacing: .5px;
+	font-family: Poppins;
+	font-size: 30px !important;
+	color:#444444;
+}
+
+.parallax4 {
+	background-color: #f8f8f8;
+	display: flex;
+}
+
+#text3h1 {
+	color: #222222;
+	font-family: Gelasio !important;
+	font-size: calc(100% + 2.5vw + 2.5vh) !important;
+	display: flex;
+	justify-content: flex-start;
+	font-weight: bold;
+	letter-spacing: 0.6px;
+}
+#text3h2 {
+	color: #4f4f50;
+	font-size: calc(100% + 0.3vw + 0.3vh) !important;
+	display: flex;
+	justify-content: flex-start;
+	font-weight: bold;
+	letter-spacing: 0.6px;
+	font-family: Gelasio;
+}
+
+#text3p {
+	font-family: Gelasio;
+}
+
+#order-h1 {
+	color: #222222;
+	font-family: Gelasio !important;
+	font-size: calc(100% + 2.5vw + 2.5vh) !important;
+	display: flex;
+	justify-content: center;
+	font-weight: bold;
+	letter-spacing: 0.6px;
+}
+#order-lead {
+	color: #4f4f50;
+	font-size: calc(100% + 0.3vw + 0.3vh) !important;
+	display: flex;
+	justify-content: center;
+	font-weight: bold;
+	letter-spacing: 0.6px;
+	font-family: aleo;
+}
+#order-steps {
+	color: #4bb49e;
+	font-size: calc(100% + 0.2vw + 0.2vh) !important;
+	text-align: center;
+	letter-spacing: 0.6px;
+	font-family: aleo;
+}
+
+b{
+	font-weight: bold;
+}
+
+#drawing {
+	z-index: 0; 
+	width: 200px;
+	height: auto;
+}
+
+#line {
+	color:#2bae84;
+}
+.parallax5 {
+	background-color: white;
+	height: fit-content;
+}
+
+#text4h1 {
+	display: flex;
+	justify-content: center;
+	color: #4f4f50;
+	font-size: calc(100% + 0.6vw + 0.6vh) !important;
+	font-family: Alata;
+	letter-spacing: 0.2px;
+}
+
+#endrow {
+	display: flex;
+	width: 100%;
+}
+#contact {
+	display: flex;
+	font-size: calc(100% + 0.07vw + 0.07vh) !important;
+	font-family: Aleo !important;
+	width: 100%;
+	justify-content: center;
+}
+#links {
+	display: flex;
+	justify-content: center;
+	position: relative;
+	color:#747474 !important;
+}
+
+#links:hover {
+	color: #2bae84 !important;
+}
+
+#links.active {
+	font-weight: bold;
+	color: #2bae84 !important;
+}
+
+.dropdown-footer:hover .dropdown-content-footer {
+	display: flex;
+	background-color:#2bae84;
+	justify-content: center;
+	color:white;
+	padding-top: 4.5px;
+	width: 100%;
+	box-shadow: 0px 0px 5px rgba(0,0,0,.2);
+	font-size: calc(100% - 0.1vw + 0.01vh) !important;
+}
+
+.dropdown-content-footer {
+	display: none;
+	position: relative;
+}
+
+.dropdown-footer {
+	position: relative;
+	display: inline-block !important;
+	width: 100%;
+}
+
+.icons {
+	display: none;
+}
+
+.column {
+	float: left;
+	width: 33%;
+}
+/*----------About CSS----------*/
+
+.section1 {
+	height: 250px;
+	background-color: #eeeeee;
+	padding-top: 90px;
+}
+.section2 {
+	height: 500px;
+}
+
+#header {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	font-family: "Aleo";
+	text-align: center;
+	font-weight: bold;
+	letter-spacing: 1.5px;
+	color: #303030;
+}
+
+#profile2 {
+	justify-content: center;
+	display: flex;
+}
+
+#col {
+	justify-content: center;
+	display: flex;
+}
+
+#orderBox {
+	display: flex;
+	justify-content: center;
+}
+
+#orderTitle {
+	font-family: Gelasio;
+	font-weight: bold;
+}
+
+#caption {
+	color:gray;
+	font-family: aleo;
+	font-style: italic;
+	font-size: calc(100% - 0.01vw + 0.01vh) !important;
+}
+
+#promise {
+	justify-content: center;
+	display: flex;
+	font-family: Aleo;
+	font-weight: bold;
+	font-size: calc(100% + 0.7vw + 0.7vh) !important;
+	color: #303030;
+	font-style: italic;
+}
+
+#promiseLead {
+	justify-content: center;
+	display: flex;
+	font-size: calc(100% + 0.3vw + 0.2vh) !important;
+	color: #303030;
+	font-style: italic;
+	text-align: center;
+}
+
+#promiseContainer {
+	justify-content: center;
+	display: flex;
+	flex-direction: column;
+	height: 90%;
+}
+
+#aboutLine {
+	color:#2bae84;
+	justify-content: center;
+	display: flex;
+	line-height: 0.5px;
+}
+
+.section2 {
+	height: fit-content;
+}
+
+.section3 {
+	background-color: #f2f2f2;
+	height: 45%;
+}
+
+/*----------Gallery CSS----------*/
+
+.header {
+	padding-top: 100px;
+	display: flex;
+	justify-content: center;
+	font-family: Aleo;
+	font-weight: bold;
+	text-align: center;
+	color: #363636;
+}
+
+#ourCreations {
+	font-size: calc(100% + 3vw + 1vh) !important;
+	justify-content: center;
+	display: flex;
+	flex-direction: column;
+	font-family: Aleo !important;
+}
+
+#subtitle {
+	font-size: calc(100% + 0.2vw - 0.2vh) !important;
+	justify-content: center;
+	display: flex;
+	text-align: center;
+	color: gray;
+	font-family: aleo;
+
+}
+
+.dropdown {
+	position: relative;
+	display: flex !important;
+	justify-content: center;
+}
+
+#dropdownMenuButton:hover {
+	color:#72cdb4;
+	border-color: #72cdb4;
+}
+
+#dropdownMenuButton{
+	color: #545354;
+	background-color: white;
+	border-color: #545354;
+	border-width: 2px;
+}
+
+.btn:hover {
+	color:#72cdb4;
+}
+
+.masonry {
+  margin: 1.5em auto;
+  width: 100%;
+  column-gap: 1.5em;
+ }
+
+.filterImg { 
+	box-sizing: border-box;
+	height: auto;
+	background-repeat: no-repeat;
+ 	background-size: cover;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.imgBox {
+	position: relative; 
+	display: none;
+  	margin: 0 0 1.5em;
+  	width: 100%;
+}
+
+@media only screen and (min-width: 1024px) {
+  .masonry {
+    column-count: 3;
+  }
+}
+
+@media only screen and (max-width: 1023px) and (min-width: 768px) {
+  .masonry {
+    column-count: 3;
+  }
+}
+
+@media only screen and (max-width: 767px) and (min-width: 540px) {
+  .masonry {
+    column-count: 2;
+  }
+}
+
+
+.overlay {
+	position: absolute;
+	top: 0px;
+	color: #434343;
+	background-color: #cfebdc;
+	height: 100%;
+	width: fit-content;
+	transition: .5s ease;
+	font-family: glacial Indifference;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 100%;
+}
+
+.imgBox:hover .overlay,
+.imgBox:focus .overlay {
+	opacity: 0.9;
+	position: absolute;
+}
+
+.imgBox .overlay {
+	opacity: 0.01;
+	transition: 0.3s;
+	overflow: hidden;
+	position: absolute;
+	overflow: scroll;
+
+}
+
+.show {
+	display: block;
+	position: relative;
+}
+
+#parallax1 {
+	background-color: #eeeeee;
+	width: 100%;
+}
+
+#product_title{
+	font-size: calc(100% + 0.05vw + 0.1vh) !important;
+	font-weight: bold;
+	font-family: aleo !important;
+	line-height: font-size: calc(100% + 0.1vw + 0.1vh) !important;
+}
+#product_title{
+	font-size: calc(100% + 0.1vw + 0.1vh) !important;
+	line-height: font-size: calc(100% + 0.05vw + 0.1vh) !important;
+}
+
+
+/*----------ANIMATION CSS----------*/
+keyframes fadeIn {
+0% {opacity:0;}
+100% {opacity:1;}
+}
+
+@-moz-keyframes fadeIn {
+0% {opacity:0;}
+100% {opacity:1;}
+}
+
+@-webkit-keyframes fadeIn {
+0% {opacity:0;}
+100% {opacity:1;}
+}
+
+@-o-keyframes fadeIn {
+0% {opacity:0;}
+100% {opacity:1;}
+}
+
+@-ms-keyframes fadeIn {
+0% {opacity:0;}
+100% {opacity:1;}
+}
+

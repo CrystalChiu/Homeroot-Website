@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+	<head> 
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css" href="teststyle.css">
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Gallery</title>
+	</head>
+	<body>
+		<nav class="navbar navbar-expand-lg navbar-light bg-white">
+			<a class="navbar-brand ml-2" href="#">
+				<img src='./images/logo.jpg' width="200"></img>
+			</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    			<span class="navbar-toggler-icon"></span>
+    		</button>
+    		<div class="container">
+				<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+					<div class="navbar-nav">
+						<a class="nav-item nav-link mx-5" href="testing.html">Home</a></li>
+						<a class="nav-item nav-link mx-5 active" href="gallery.html">Gallery</a></li>
+						<a class="nav-item nav-link mx-5" href="about.html">About</a></li>
+						<a class="nav-item nav-link ml-5" href="testing.html#order-h1">Order</a></li>
+					</div> <!---class col 2--->
+				</div><!---navbar elements end--->
+			</div><!---container end--->
+		</nav> <!---complete navbar end--->
+
+		<div class="header">
+			<h1 class="display-4 mt-4 mb-3" id="ourCreations">our creations.</h1>
+		</div> <!---end header--->
+		<div><p class="mx-4" id="subtitle">these are just some of our amazing creations, check out our etsy for more</p></div>
+
+		<div class="dropdown"> 
+			<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Filter By</button>
+			<div class="dropdown-menu">
+				<button class="btn active" onclick="filterSelection('all')">Show all</button>
+				<div class="dropdown-divider"></div>
+				<button class="btn" onclick="filterSelection('soap')">Soaps</button>
+				<div class="dropdown-divider"></div>
+				<button class="btn" onclick="filterSelection('candle')">Candles</button>
+				<div class="dropdown-divider"></div>
+				<button class="btn" onclick="filterSelection('bodycare')">Bodycare</button>
+			</div>
+		</div>
+
+		<div class="container mt-4">
+			<div class="masonry" id="imgGal">
+					<div class="imgBox soap mb-4">
+						<img class="filterImg" id="galleryImg" src='./images/soap-display.png' width="100%">
+						<div class="overlay">
+							<h1 id="product_title">Activated Charcoal Soap</h1>
+							<p id="product_des" class="mx-5"><strong>Ingredients:</strong> Apple Fruit Extract, Marine Extract, Niacinamide, Willow Bark Extract, Bamboo Extract</p>
+						</div>
+					</div><!---Img Box--->
+					<div class="imgBox soap mb-4">
+						<img class="filterImg" id="galleryImg" src='./images/cupcake.png' width="100%">
+						<div class="overlay">
+							<h1 id="product_title">Activated Charcoal Soap</h1>
+							<p id="product_des" class="mx-5"><strong>Ingredients:</strong> Apple Fruit Extract, Marine Extract, Niacinamide, Willow Bark Extract, Bamboo Extract</p>
+						</div>
+					</div>
+					<div class="imgBox bodycare mb-4">
+						<img class="filterImg" id="galleryImg" src='./images/bathbomb.png' width="100%">
+						<div class="overlay">
+							<h1 id="product_title">Activated Charcoal Soap</h1>
+							<p id="product_des" class="mx-5"><strong>Ingredients:</strong> Apple Fruit Extract, Marine Extract, Niacinamide, Willow Bark Extract, Bamboo Extract</p>
+						</div>
+					</div>
+
+
+					<div class="imgBox candle mb-4">
+						<img class="filterImg" id="galleryImg" src='./images/candle-2.png' width="100%">
+						<div class="overlay">
+							<h1 id="product_title">Activated Charcoal Soap</h1>
+							<p id="product_des" class="mx-5"><strong>Ingredients:</strong> Apple Fruit Extract, Marine Extract, Niacinamide, Willow Bark Extract, Bamboo Extract</p>
+						</div>
+					</div>
+					<div class="imgBox soap mb-4">
+						<img class="filterImg" id="galleryImg" src='./images/ob.png' width="100%">
+						<div class="overlay">
+							<h1 id="product_title">Activated Charcoal Soap</h1>
+							<p id="product_des" class="mx-5"><strong>Ingredients:</strong> Apple Fruit Extract, Marine Extract, Niacinamide, Willow Bark Extract, Bamboo Extract</p>
+						</div>
+					</div>
+					<div class="imgBox bodycare mb-4">
+						<img class="filterImg" id="galleryImg" src='./images/butter.png' width="100%">
+						<div class="overlay">
+							<h1 id="product_title">Activated Charcoal Soap</h1>
+							<p id="product_des" class="mx-5"><strong>Ingredients:</strong> Apple Fruit Extract, Marine Extract, Niacinamide, Willow Bark Extract, Bamboo Extract</p>
+						</div>
+					</div>
+
+					<div class="imgBox candle mb-4">
+						<img class="filterImg" id="galleryImg" src='./images/candle.jpeg' width="100%">
+						<div class="overlay">
+							<h1 id="product_title">Activated Charcoal Soap</h1>
+							<p id="product_des" class="mx-5"><strong>Ingredients:</strong> Apple Fruit Extract, Marine Extract, Niacinamide, Willow Bark Extract, Bamboo Extract</p>
+						</div>
+					</div>
+					<div class="imgBox soap mb-4">
+						<img class="filterImg" id="galleryImg" src='./images/cupcake-2.png' width="100%">
+						<div class="overlay">
+							<h1 id="product_title">Activated Charcoal Soap</h1>
+							<p id="product_des" class="mx-5"><strong>Ingredients:</strong> Apple Fruit Extract, Marine Extract, Niacinamide, Willow Bark Extract, Bamboo Extract</p>
+						</div>
+					</div>
+					<div class="imgBox soap mb-4">
+						<img class="filterImg" id="galleryImg" src='./images/rose.png' width="100%">
+						<div class="overlay">
+							<h1 id="product_title">Activated Charcoal Soap</h1>
+							<p id="product_des" class="mx-5"><strong>Ingredients:</strong> Apple Fruit Extract, Marine Extract, Niacinamide, Willow Bark Extract, Bamboo Extract</p>
+						</div>
+					</div>
+					<div class="imgBox soap mb-4">
+						<img class="filterImg" id="galleryImg" src='./images/christmas-soap.png' width="100%">
+						<div class="overlay">
+							<h1 id="product_title">Activated Charcoal Soap</h1>
+							<p id="product_des" class="mx-5"><strong>Ingredients:</strong> Apple Fruit Extract, Marine Extract, Niacinamide, Willow Bark Extract, Bamboo Extract</p>
+						</div>
+					</div>
+					<div class="imgBox bodycare mb-4">
+						<img class="filterImg" id="galleryImg" src='./images/shampoo-bar2.jpg' width="100%">
+						<div class="overlay">
+							<h1 id="product_title">Activated Charcoal Soap</h1>
+							<p id="product_des" class="mx-5"><strong>Ingredients:</strong> Apple Fruit Extract, Marine Extract, Niacinamide, Willow Bark Extract, Bamboo Extract</p>
+						</div>
+					</div>
+					<div class="imgBox soap mb-4">
+						<img class="filterImg" id="galleryImg" src='./images/cupcake-3.png' width="100%">
+						<div class="overlay">
+							<h1 id="product_title">Activated Charcoal Soap</h1>
+							<p id="product_des" class="mx-5"><strong>Ingredients:</strong> Apple Fruit Extract, Marine Extract, Niacinamide, Willow Bark Extract, Bamboo Extract</p>
+						</div>
+					</div>
+					<div class="imgBox bodycare mb-4">
+						<img class="filterImg" id="galleryImg" src='./images/bathbomb-3.png' width="100%">
+						<div class="overlay">
+							<h1 id="product_title">Activated Charcoal Soap</h1>
+							<p id="product_des" class="mx-5"><strong>Ingredients:</strong> Apple Fruit Extract, Marine Extract, Niacinamide, Willow Bark Extract, Bamboo Extract</p>
+						</div>
+					</div>
+					<div class="imgBox soap mb-4">
+						<img class="filterImg" id="galleryImg" src='./images/christmas-soap-2.png' width="100%">
+						<div class="overlay">
+							<h1 id="product_title">Activated Charcoal Soap</h1>
+							<p id="product_des" class="mx-5"><strong>Ingredients:</strong> Apple Fruit Extract, Marine Extract, Niacinamide, Willow Bark Extract, Bamboo Extract</p>
+						</div>
+					</div>
+					<div class="imgBox soap mb-4">
+						<img class="filterImg" id="galleryImg" src='./images/detox.png' width="100%">
+						<div class="overlay">
+							<h1 id="product_title">Activated Charcoal Soap</h1>
+							<p id="product_des" class="mx-5"><strong>Ingredients:</strong> Apple Fruit Extract, Marine Extract, Niacinamide, Willow Bark Extract, Bamboo Extract</p>
+						</div>
+					</div>
+					<div class="imgBox soap mb-4">
+						<img class="filterImg" id="galleryImg" src='./images/4.png' width="100%">
+						<div class="overlay">
+							<h1 id="product_title">Activated Charcoal Soap</h1>
+							<p id="product_des" class="mx-5"><strong>Ingredients:</strong> Apple Fruit Extract, Marine Extract, Niacinamide, Willow Bark Extract, Bamboo Extract</p>
+						</div>
+					</div>
+			</div><!---End Row--->
+		</div><!---End Container--->
+
+		<div class=parallax5>
+			<h1 class="display-4 mt-5" id="text4h1">don't be a stranger</h1>
+			<div class="container" id="contact">
+				<div class="row mt-5 mb-5" id="endrow">
+					<div class="col-12 col-lg-3">
+						<a href="https://www.instagram.com/homeroot/" target="_blank" id="links">Instagram</a>
+					</div>
+					<div class="col-12 col-lg-3">
+						<a href="https://www.etsy.com/shop/HomerootCreations?ref=shop_sugg" target="_blank" id="links">Etsy</a>
+					</div>
+					<div class="col-12 col-lg-3">
+						<div class="dropdown-footer">
+							<a id="links">Email</a>
+							<div class="dropdown-content-footer">
+								<p>homerootcreations@gmail.com</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-lg-3">
+						<a href="faq.html" id="links">FAQ</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<script type="text/javascript">
+			var elementArray = document.getElementsByClassName("imgBox");
+
+			showAll(); //default shows all
+			function filterSelection(type) {
+				showAll();
+				if (type == "all") {
+					showAll();
+				}
+				else {
+					hide(type);
+				}
+			}
+
+			function showAll() {
+				for (var i = 0; i < elementArray.length; i++) {
+					elementArray[i].classList.add("show");
+				}
+			}
+
+			function hide(type) {
+				//hides whatever doesnt have the specific 'type' class 
+				for (var i = 0; i < elementArray.length; i++) {
+					if(elementArray[i].classList.contains(type) == false) {
+						elementArray[i].classList.remove("show");
+					}
+				}
+			}
+		</script>
+
+	</body>
+
+
+
+	<!---bootstrap JS--->
+		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+	</body>
+</html>
